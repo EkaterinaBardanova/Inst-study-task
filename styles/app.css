@@ -1,0 +1,326 @@
+@font-face {
+    font-weight: 400;
+    font-family: Roboto;
+    src: url("../assets/fonts/Roboto-Regular.ttf") format("ttf");
+  }
+  
+  @font-face {
+    font-weight: 500;
+    font-family: Roboto;
+    src: url("../assets/fonts/Roboto-Medium.ttf") format("ttf");
+  }
+  
+  @font-face {
+    font-weight: 700;
+    font-family: Roboto;
+    src: url("../assets/fonts/Roboto-Bold.ttf") format("ttf");
+  }
+  
+  @font-face {
+    font-weight: normal;
+    font-family: "Grand Hotel";
+    src: url("../assets/fonts/GrandHotel-Regular.woff2") format("woff2");
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+  
+    font-family: Roboto, sans-serif;
+  }
+  
+  h1 {
+    display: flex;
+    justify-content: flex-end;
+    grid-column: 2 / 4;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "Grand Hotel";
+    font-weight: 400;
+    font-size: 32px;
+  }
+  
+  img {
+    max-width: 100%;
+  
+    vertical-align: middle;
+  }
+  
+  button {
+    font-family: inherit;
+  }
+  
+  .mobile {
+    width: 375px;
+  
+    color: #262626;
+  
+    background: #fff;
+  
+    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+  }
+  
+  .mobile-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+  
+    background: #f5f5f5;
+  }
+  
+  .mobile-time {
+    font-weight: bold;
+    font-size: 13px;
+  }
+  
+  .icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+  
+    background-color: unset;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: none;
+  
+    cursor: pointer;
+  }
+  
+  .icon-signal {
+    background-image: url("../assets/icons/signal.svg");
+  }
+  
+  .icon-connection {
+    background-image: url("../assets/icons/wifi.svg");
+  }
+  
+  .icon-battery {
+    background-image: url("../assets/icons/battery.svg");
+  }
+  
+  .icon-camera {
+    background-image: url("../assets/icons/camera.svg");
+  }
+  
+  .icon-igtv {
+    background-image: url("../assets/icons/igtv.svg");
+    margin-right: 20px;
+  }
+  
+  .icon-messanger {
+    background-image: url("../assets/icons/messanger.svg");
+  }
+  
+  .icon-more {
+    background-image: url("../assets/icons/more.svg");
+  }
+  
+  .icon-save {
+    background-image: url("../assets/icons/save.svg");
+  }
+  
+  .icon-like {
+    background-image: url("../assets/icons/like.svg");
+  }
+  
+  .icon-comment {
+    background-image: url("../assets/icons/comment.svg");
+  }
+  
+  .icon-home {
+    background-image: url("../assets/icons/home.svg");
+  }
+  
+  .icon-search {
+    background-image: url("../assets/icons/search.svg");
+  }
+  
+  .icon-add {
+    background-image: url("../assets/icons/add.svg");
+  }
+  
+  .header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #fafafa;
+  }
+  
+  .container-header-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    grid-column: 4;
+    height: 100%;
+    margin-right: 15px;
+  }
+  
+  .instagram-name {
+    display: flex;
+    justify-content: center;
+    grid-column: 2 / 4;
+  }
+  
+  .container-camera {
+    display: flex;
+    margin-left: 15px;
+  }
+  
+  .stories {
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: repeat(4, 65px);
+    grid-column-gap: 20px;
+    padding: 10px;
+  }
+  
+  .story-text {
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .container-story {
+    width: 65px;
+  }
+  
+  .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .story-img {
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .story-button {
+    padding: 0;
+    border: none;
+    background-color: white;
+  }
+  
+  .section-post {
+    font-size: 13px;
+  }
+  
+  /* user section */
+  .user-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-avatar {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #e0e0e0;
+    margin-right: 10px;
+  }
+  
+  .user-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-text p {
+    margin: 0;
+  }
+  
+  .user-name {
+    font-weight: 500;
+  }
+  
+  .container-user-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 15px 10px;
+  }
+  
+  .section-post-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px;
+    font-size: 13px;
+  }
+  
+  .mr-20 {
+    margin-right: 20px;
+  }
+  
+  .pad-15 {
+    padding: 0 15px;
+  }
+  
+  .post-text {
+    box-sizing: border-box;
+    border-bottom: 1px solid #c6c6c8;
+  }
+  
+  .mr-0 {
+    margin: 0;
+  }
+  
+  .mb-30 {
+    margin-bottom: 30px;
+  }
+  
+  .footer {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: #fafafa;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  .border-bottom {
+    border-bottom: 1px solid #c6c6c8;
+  }
+  
+  .border-top {
+    border-top: 1px solid #c6c6c8;
+  }
+  
+  .rounded {
+    border-radius: 50%;
+  }
+  
+  .mr-5 {
+    margin-right: 5px;
+  }
+  
+  .mr-15 {
+    margin-right: 15px;
+  }
+  
+  .ml-auto {
+    margin-left: auto;
+  }
+  
+  .w-15 {
+    width: 15px;
+  }
+  
+  .justify-end {
+    justify-self: end;
+  }
+  
+  .grid-column-end {
+    grid-column: -1;
+  }
+  
